@@ -182,3 +182,115 @@ footer {
   margin: 0.25rem;
   font-size: 0.9rem;
 }
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px; /* You can adjust this width */
+  height: auto;
+}
+
+/* Education-specific styles */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  width: 2px;
+  height: 100%;
+  background: #2c2c2c;
+}
+
+.edu-card {
+  background: #1e1e1e;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0 2rem 60px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-3px);
+  border-color: #9bc9ff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.edu-icon {
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  background: #1e1e1e;
+  border: 2px solid #9bc9ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-icon i {
+  color: #9bc9ff;
+  font-size: 1.2rem;
+}
+
+.edu-header {
+  margin-bottom: 1rem;
+}
+
+.edu-header h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.date-tag {
+  background: #2c2c2c;
+  padding: 0.25rem 0.75rem;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.edu-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.achievement-badge {
+  background: #9bc9ff15;
+  padding: 0.5rem 0.8rem;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #2c2c2c;
+}
+
+.achievement-badge i {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .edu-card {
+    margin-left: 50px;
+  }
+  .edu-icon {
+    left: -40px;
+    width: 35px;
+    height: 35px;
+  }
+}
