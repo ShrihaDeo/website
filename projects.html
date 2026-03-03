@@ -7,51 +7,109 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Projects</h1>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">&lt;/&gt;</span> Portfolio
+      </div>
       <nav>
-        <ul>
+        <ul class="nav-menu">
           <li><a href="home.html">Home</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <li><a href="education.html">Education</a></li>
+          <li><a href="education.html">Education & Experience</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Occupancy Detection – Internship</h3>
-        <p>Designed a smart occupancy detection system using PIR and ToF sensors, with embedded C and AWS integration.</p>
-        <a href="Projects/project1.html">View Project</a>
-      </div>
+    <section class="projects-section">
+      <h1 class="section-title">Featured <span class="highlight">Projects</span></h1>
+      <p class="section-subtitle">A selection of projects I've worked on, demonstrating my skills and problem-solving abilities.</p>
 
-      <div class="project-card">
-        <h3>Once Upon a Time</h3>
-        <p>Interactive digital story authoring platform with AI-driven backend using React and Convex.</p>
-        <a href="Projects/project2.html">View Project</a>
-      </div>
+     <div class="projects-grid">
 
-      <div class="project-card">
-        <h3>Weather Application – Hackathon</h3>
-        <p>Collaborative project using Micro:bits and Python to develop a weather forecast app.</p>
-        <a href="Projects/project3.html">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Circuit Application in C#</h3>
-        <p>Developed a visual simulator for logic gates with interactive components in C#.</p>
-        <a href="Projects/project4.html">View Project</a>
-      </div>
+  <div class="project-card">
+    <h3>Circuit Application</h3>
+    <p>A Year 1 project built in C# to design and simulate circuits with logic gates. Users can create custom circuits and test their behavior interactively.</p>
+    <div class="project-tags">
+      <span>C#</span>
+      <span>Logic Simulation</span>
+      <span>UI Design</span>
     </div>
+
+  </div>
+
+  <div class="project-card">
+    <h3>Occupancy Detection – Internship</h3>
+    <p>Developed a smart occupancy detection system using PIR and ToF sensors. Embedded C on microcontrollers handled real-time detection, with Python & Node.js for live data visualization.</p>
+    <div class="project-tags">
+      <span>Embedded C</span>
+      <span>Python</span>
+      <span>Node.js</span>
+      <span>IoT</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Weather Application</h3>
+    <p>Developed during a Hackathon using Python and Microbits. Retrieves real-time weather data from OpenWeatherAPI and presents it to users.</p>
+    <div class="project-tags">
+      <span>Python</span>
+      <span>Microbits</span>
+      <span>OpenWeatherAPI</span>
+    </div>
+    <div class="project-buttons">
+      <a href="https://github.com/ShrihaDeo/WeatherAppES" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Once Upon A Time</h3>
+    <p>An interactive authoring environment built with React, JavaScript/TypeScript, HTML, and CSS. Integrates with OpenAI's ChatGPT API to enable dynamic storytelling.</p>
+    <div class="project-tags">
+      <span>React</span>
+      <span>JavaScript/TypeScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>OpenAI</span>
+    </div>
+    <div class="project-buttons">
+      <a href="https://once-upon-a-time-app.vercel.app/" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Live Demo</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Flamme Rouge</h3>
+    <p>An interactive card game inspired by the Flamme Rouge board game. Developed in C# as a Year 1 project focusing on strategic gameplay and player engagement.</p>
+    <div class="project-tags">
+      <span>C#</span>
+      <span>Game Design</span>
+      <span>OOP</span>
+    </div>
+    <div class="project-buttons">
+      <a href="https://github.com/ShrihaDeo/Flamme-Rouge" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Minesweeper</h3>
+    <p>A Minesweeper game developed in Python as a personal project, replicating the classic gameplay with UI improvements and ongoing feature updates.</p>
+    <div class="project-tags">
+      <span>Python</span>
+      <span>Game Development</span>
+      <span>GUI</span>
+    </div>
+    <div class="project-buttons">
+      <a href="https://github.com/ShrihaDeo/Minesweeper" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+
+</div>
+    </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Shriha Sadhvika Deo. All rights reserved.</p>
-    </div>
-  </footer>
 </body>
 </html>
