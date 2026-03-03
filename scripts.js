@@ -1,4 +1,3 @@
-// scripts.js
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav a');
@@ -20,20 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
   
     setTimeout(() => {
       sparkle.remove();
-    }, 1000); // match animation duration
+    }, 1000); 
   });
   
-  // Create the shimmer element
 const shimmer = document.createElement('div');
 shimmer.className = 'mouse-shimmer';
 document.body.appendChild(shimmer);
 
-// Move shimmer with the mouse
 document.addEventListener('mousemove', (e) => {
-  shimmer.style.left = `${e.clientX - 9}px`; // Center the shimmer
+  shimmer.style.left = `${e.clientX - 9}px`; 
   shimmer.style.top = `${e.clientY - 9}px`;
 
-  // Optional sparkles
   const sparkle = document.createElement('div');
   sparkle.className = 'sparkle';
   sparkle.style.left = `${e.clientX}px`;
